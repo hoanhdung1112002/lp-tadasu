@@ -8,6 +8,7 @@ body {
 #lp-tadasu {
     max-width: 753px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 //header
@@ -41,10 +42,215 @@ body {
 .point {
     margin-top: -215px;
     &-container {
-
     }
     &-top {
+        position: relative;
+        &-content {
+            position: absolute;
+            top: 68%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+    }
+    &-content {
+        padding-top: 125px;
+        padding-bottom: 300px;
+        background: #FFFDEE;
+        text-align: center;
+        > img:first-child {
+            margin-bottom: 54px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                p {
+                    margin: 0;
+                    padding: 0 56px;
+                    color:#373445;
+                    text-align: justify;
+                    font-family: "Noto Sans JP";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 39px;
+                    letter-spacing: 0.24px;
+                }
+            }
+            li:first-child {
+                margin-bottom: 66px;
+                .point-item-imgs {
+                    position: relative;
+                    text-align: right;
+                    margin-bottom: 28px;
+                    img:nth-of-type(2){
+                        position: absolute;
+                        left: 19px;
+                        top: 47%;
+                        transform: translateY(-50%);
+                    }
+                    img:nth-of-type(3){
+                        position: absolute;
+                        left: -34px;
+                        bottom: 98px;
+                    }
+                    img:last-child {
+                        position: absolute;
+                        left: -34px;
+                        bottom: 16px;
+                    }
+                }
+            }
+            li:nth-of-type(2){
+                margin-bottom: 70px;
+                position: relative;
+                text-align: left;
+                .point-item-imgs {
+                    margin-bottom: 18px;
+                    img:nth-of-type(2){
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                    }
+                    img:last-child {
+                        position: absolute;
+                        right: -38px;
+                        bottom: 152px;
+                    }
+                }
+            }
+            li:nth-of-type(3){
+                margin-bottom: 72px;
+                text-align: right;
+                .point-item-imgs {
+                    position: relative;
+                    margin-bottom: 22px;
+                    img:nth-of-type(2) {
+                        position: absolute;
+                        left: 15px;
+                        top: 61%;
+                        transform: translateY(-50%);
+                    }
+                    img:last-child {
+                        position: absolute;
+                        left: -21px;
+                        bottom: 32px;
+                    }
+                }
+            }
+            li:nth-of-type(4){
+                position: relative;
+                text-align: left;
+                .point-item-imgs {
+                    margin-bottom: 18px;
+                    img:nth-of-type(2){
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                    }
+                    img:last-child {
+                        position: absolute;
+                        right: -38px;
+                        bottom: 152px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//improve
+.improve {
+    margin-top: -183px;
+    position: relative;
+    z-index: 2;
+    &-container {
+    }
+    &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        img:first-child {
+            padding-top: 92px;
+            margin-left: 47px;
+        }
+        img:nth-of-type(2){
+            margin-left: 50px;
+            margin-top: -43px;
+            margin-bottom: 21px;
+        }
+        img:nth-of-type(3){
+            float: right;
+            clear: both;
+        }
+        img:nth-of-type(4){
+            margin-top: -207px;
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 0 44px;
+            color: #FFF;
+            font-family: "Noto Sans JP";
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 49px;
+            letter-spacing: 1.56px;
+            span {
+                letter-spacing: -6.24px;
+            }
+        }
+    }
+
+}
+
+//anshin
+.anshin {
+    position: relative;
+    z-index: 1;
+    margin-top: -74px;
+    background: #FFFDEE;
+    &-container {
         
+    }
+    &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        img:first-child {
+            display: block;
+            padding-top: 128px;
+            margin-left: 42px;
+        }
+        img:nth-of-type(2){
+            margin-top: -57px;
+            margin-left: -26px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 0 78px 51px;
+            color: #373445;
+            font-family: "Noto Sans JP";
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 49px;
+            letter-spacing: 1.82px;
+            span:nth-of-type(1){
+                letter-spacing: -8.06px;
+            }
+            span:nth-of-type(2){
+                letter-spacing: -9.1px;
+            }
+        }
+        img:last-child {
+            float: right;
+            clear: both;
+            margin-right: -30px;
+        }
     }
 }
 // footer
