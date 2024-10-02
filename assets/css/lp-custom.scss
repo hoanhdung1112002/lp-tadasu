@@ -499,25 +499,10 @@ body {
             > img {
                 margin-bottom: 24px;
             }
-            ul {
+            .card-list {
                 margin: 0;
                 padding: 0;
                 list-style: none;
-                width: 3000px;
-                display: flex;
-                justify-content: space-between;
-                transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.01s;
-                transform: translate(0, 0);
-                left: calc(50vw - 500px);
-                &.active01{
-					transform: translate(0,0);
-				}
-				&.active02{
-					transform: translate(-33.33%,0);
-				}
-				&.active03{
-					transform: translate(-66.66%,0);
-				}
             }
             .card-item {
                 position: relative;
@@ -575,7 +560,7 @@ body {
             position: relative;
             text-align: center;
             padding-bottom: 236px;
-            img:first-child {
+            > img:first-child {
                 margin-bottom: 49px;
             }
             img:nth-of-type(3){
@@ -589,7 +574,7 @@ body {
     }
 
     .flow {
-        margin-top: -164px;
+        margin-top: -120px;
         &-container {
             img {
                 display: block;
