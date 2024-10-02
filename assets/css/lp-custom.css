@@ -39,7 +39,7 @@ body {
   overflow-x: hidden;
 }
 #lp-tadasu .header {
-  background: url(../images/header/header-bg.png) no-repeat;
+  background: url(../images/header/header-bg.webp) no-repeat;
   background-position: top;
   background-size: 100%;
 }
@@ -370,7 +370,7 @@ body {
   justify-content: center;
 }
 #lp-tadasu .token {
-  background: linear-gradient(0deg, rgba(1, 1, 1, 0.15) 22.77%, rgba(138, 138, 138, 0) 43.55%), url(../images/token/bg.png) lightgray 0px 0px/100% 148.298% no-repeat;
+  background: linear-gradient(0deg, rgba(1, 1, 1, 0.15) 22.77%, rgba(138, 138, 138, 0) 43.55%), url(../images/token/bg.webp) lightgray 0px 0px/100% 148.298% no-repeat;
 }
 #lp-tadasu .token-container {
   position: relative;
@@ -568,7 +568,7 @@ body {
 #lp-tadasu .flow-content ul::after {
   position: absolute;
   content: "";
-  background: url(../images/flow/flow.png) no-repeat;
+  background: url(../images/flow/flow.webp) no-repeat;
   width: 100%;
   height: 100%;
   left: 0;
@@ -1171,6 +1171,9 @@ body {
   }
   #lp-tadasu .faq-main ul li.faq-item .faq-content ul li img {
     max-width: 4.781vw;
+  }
+  #lp-tadasu .faq-main ul li.faq-item .faq-content ul li .faq-answer img {
+    max-width: 73.971vw;
   }
   #lp-tadasu .footer-container img:first-child {
     margin-bottom: 9.56vw;
