@@ -13,6 +13,20 @@ jQuery(function($){
         cssEase: 'linear',
     });
 
+    $('.card-list').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        variableWidth:true,
+        centerMode: true,
+        cssEase: 'linear',
+    });
+
     $('.faq-title').on("click", function () {
         var $content = $(this).closest(".faq-item").find(".faq-content");
         var $faqplus = $(this).closest(".faq-item").find(".faq-plus");

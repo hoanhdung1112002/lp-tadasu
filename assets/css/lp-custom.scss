@@ -248,6 +248,9 @@ body {
         &-container {
             position: relative;
             z-index: 1;  
+            > img {
+                display: block;
+            }
         }
         &-content {
             position: absolute;
@@ -552,7 +555,7 @@ body {
         &-container {
             position: relative;
             text-align: center;
-            padding-bottom: 116px;
+            padding-bottom: 236px;
             img:first-child {
                 margin-bottom: 49px;
             }
@@ -567,6 +570,7 @@ body {
     }
 
     .flow {
+        margin-top: -114px;
         &-container {
             img {
                 display: block;
@@ -605,6 +609,9 @@ body {
     .expert {
         &-container {
             position: relative;
+            > img {
+                display: block;
+            }
         }
         &-content {
             position: absolute;
@@ -628,6 +635,8 @@ body {
     }
 
     .faq {
+        margin-top: -128px;
+        padding-bottom: 234px;
         background: #FFFCF6;
         &-container {
             position: relative;
@@ -638,22 +647,23 @@ body {
             }
         }
         &-main {
+            margin-top: 93px;
             padding-left: 55px;
             padding-right: 64px;
             ul {
                 margin: 0;
                 padding: 0;
                 list-style: none;
-                li {
+                li.faq-item {
                     padding-top: 19px;
                     padding-bottom: 41px;
                     border-bottom: 1px solid #000;
                     .faq-title {
                         display: flex;
-                        align-items: center;
-                        justify-content: space-between;
+                        align-items: flex-start;
                         gap: 0 18px;
                         h3 {
+                            max-width: 502px;
                             margin: 0;
                             color: #000;
                             font-family: "A P-OTF Ryumin Pr6N";
@@ -663,59 +673,35 @@ body {
                             letter-spacing: 0.52px;
                         }
                         .faq-plus {
-                            position: relative;
-                            span {
-                                display: block;
-                                width: 38px;
-                                margin: auto;
-                                height: 3px;
-                                position: absolute;
-                                right: 0;
-                                background-color: #417571;
-                                top: calc(50% - 5px);
-                            }
-                            .faq-x {
-                                top: calc(50% - 5px);
-                                transition: 0.6s;
-                                transform: rotate(-180deg);
-                            }
-                            .faq-y {
-                                transition: 0.6s;
-                                transform: rotate(-90deg);
-                                opacity: 1;
-        
-                            }
+                           text-decoration: none;
                         }
-                        .faq-plus.faq-add span.faq-x{
+                        .faq-plus.faq-add img{
                             transition: 0.6s;
-                            transform: rotate(180deg)
                         }
-                        .faq-plus.faq-add span.faq-y{
+                        .faq-plus.faq-remove img {
                             transition: 0.6s;
-                            transform: rotate(180deg);
-                            opacity: 0
-                        }
-                        .faq-plus.faq-remove span.faq-x {
-                            transition: 0.6s;
-                            transform: rotate(-180deg)
-                        }
-                        .faq-plus.faq-remove span.faq-y {
-                            transition: 0.6s;
-                            transform: rotate(-90deg);
-                            opacity: 1
                         }
                     }
                     .faq-content {
                         display: none;
-                        p {
-                            margin: 0;
-                            padding: 0;
-                            color: #000;
-                            font-family: "A P-OTF Ryumin Pr6N";
-                            font-size: 22px;
-                            font-weight: 400;
-                            line-height: 42px;
-                            letter-spacing: 0.44px;
+                        padding-top: 41px;
+                        ul {
+                            li {
+                                padding: 10px 0;
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 0 14px;
+                                p {
+                                    margin: 0;
+                                    padding: 0;
+                                    color: #000;
+                                    font-family: "A P-OTF Ryumin Pr6N";
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    line-height: 42px;
+                                    letter-spacing: 0.44px;
+                                }
+                            }
                         }
                     }
                 }
@@ -724,6 +710,8 @@ body {
     }
 
     .footer {
+        background: #FFFCF6;
+        padding-bottom: 58px;
         &-container {
             text-align: center;
             img:first-child {
@@ -750,5 +738,597 @@ body {
     }
 }
 
+@media (max-width: 752px){
+    #lp-tadasu {
+        max-width: 100vw;
+            .header {
+                &-container {
+                    padding-bottom: 35.33vw;
+                }
+                &-top {
+                    padding: 3.98vw 0.66vw 0 4.38vw;
+                    margin-bottom: 22.58vw;
+                    .logo {
+                        img {
+                            max-width: 31.076vw;
+                        }
+                    }
+                    .header-btn {
+                    img {
+                        margin-top: -0.8vw;
+                        max-width: 47.012vw;
+                        }
+                    }
+                }
+                &-content {
+                    > img {
+                    margin-left: -1.99vw;
+                    max-width: 98.008vw;
+                    }
+                    .cta-btn {
+                        img {
+                            max-width: 95.485vw;
+                        }
+                    }
+                }
+            }
+            .point {
+            margin-top: -28.55vw;
+            &-top {
+                img:first-child {
+                    max-width: 100vw;
+                }
+                img:last-child {
+                    max-width: 58.3vw;
+                }
+            }
+            &-content {
+                padding-bottom: 39.84vw;
+                > img:first-child {
+                margin-bottom: 7.17vw;
+                max-width: 86.72vw;
+                }
+                ul {
+                    li {
+                        p {
+                        padding: 0 2.656vw;
+                        font-size: 3.19vw;
+                        line-height: 5.18vw;
+                        letter-spacing: 0.3vw;
+                        }
+                    }
+                    li:first-child {
+                        margin-bottom: 8.76vw;
+                        .point-item-imgs {
+                        margin-bottom: 3.72vw;
+                            img:first-child {
+                                max-width: 78.486vw;
+                            }
+                            img:nth-of-type(2) {
+                                left: 2.52vw;
+                                max-width: 23.639vw;
+                            }
+                            img:nth-of-type(3) {
+                                max-width: 57.105vw;
+                                left: -4.52vw;
+                                bottom: 13.01vw;
+                            }
+                            img:last-child {
+                                max-width: 83.665vw;
+                                left: -4.52vw;
+                                bottom: 2.12vw;
+                            }
+                        }
+                    }
+                    li:nth-of-type(2) {
+                        margin-bottom: 9.3vw;
+                        .point-item-imgs {
+                            margin-bottom: 1.86vw;
+                            img:first-child {
+                                max-width: 77.689vw;
+                            }
+                            img:nth-of-type(2) {
+                                max-width: 23.639vw;
+                                right: 1.33vw;
+                            }
+                            img:last-child {
+                                max-width: 83.533vw;
+                                right: -5.05vw;
+                                bottom: 19.52vw;
+                            }
+                        }
+                        p {
+                            letter-spacing: 0;
+                        }
+                    }
+                    li:nth-of-type(3) {
+                        margin-bottom: 9.56vw;
+                        .point-item-imgs {
+                            margin-bottom: 3.45vw;
+                            img:first-child {
+                                max-width: 78.486vw;
+                            }
+                            img:nth-of-type(2) {
+                                max-width: 23.639vw;
+                                left: 1.99vw;
+                            }
+                            img:last-child {
+                                max-width: 92.961vw;
+                                left: -2.79vw;
+                                bottom: 3.59vw;
+                            }
+                        }
+                    }
+                    li:nth-of-type(4) {
+                        .point-item-imgs {
+                            margin-bottom: 2.12vw;
+                            img:first-child {
+                                max-width: 77.689vw;
+                            }
+                            img:nth-of-type(2) {
+                                max-width: 23.639vw;
+                                right: 1.33vw;
+                            }
+                            img:last-child {
+                                max-width: 83.533vw;
+                                right: -5.05vw;
+                                bottom: 19.65vw;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+            .improve {
+                margin-top: -23.9vw;
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    img:first-child {
+                        padding-top: 12.22vw;
+                        margin-left: 6.24vw;
+                        max-width: 56.441vw;
+                    }
+                    img:nth-of-type(2) {
+                        margin-left: 6.64vw;
+                        margin-top: -5.71vw;
+                        margin-bottom: 2.79vw;
+                        max-width: 75.83vw;
+                    }
+                    img:nth-of-type(3) {
+                        max-width: 82.337vw;
+                    }
+                    img:nth-of-type(4) {
+                        max-width: 82.337vw;
+                        margin-top: -27.49vw;
+                        margin-bottom: 3.98vw;
+                    }
+                    p {
+                    margin: 0 5.84vw;
+                    font-size: 3.45vw;
+                    line-height: 6.51vw;
+                    letter-spacing: 0.207vw;
+                        span {
+                            letter-spacing: -0.829vw;
+                        }
+                    }
+                }
+            }
+            .anshin {
+                margin-top: -9.83vw;
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    img:first-child {
+                        max-width: 36.653vw;
+                        padding-top: 17vw;
+                        margin-left: 5.58vw;
+                    }
+                    img:nth-of-type(2) {
+                        max-width: 57.503vw;
+                        margin-top: -7.57vw;
+                        margin-left: -3.45vw;
+                        margin-bottom: 2.66vw;
+                    }
+                    p {
+                    margin: 0 0 10.23vw 6.77vw;
+                    font-size: 3.45vw;
+                    line-height: 6.51vw;
+                    letter-spacing: 0.242vw;
+                    span:nth-of-type(1) {
+                        letter-spacing: -1.1vw;
+                    }
+                    span:nth-of-type(2) {
+                        letter-spacing: -1.2vw;
+                    }
+                    }
+                    img:last-child {
+                        max-width: 88.048vw;
+                        margin-right: -4.25vw;
+                    }
+                }
+            }
+            .voice {
+            &-container {
+                padding-top: 31.47vw;
+                padding-bottom: 52.72vw;
+                > img:first-child {
+                    max-width: 78.22vw;
+                    margin-left: 3.98vw;
+                    margin-bottom: 5.98vw;
+                }
+                > img:nth-of-type(2) {
+                    max-width: 82.603vw;
+                    margin-bottom: 1.86vw;
+                }
+                > img:nth-of-type(3) {
+                    max-width: 61.487vw;
+                    margin-left: 2.12vw;
+                    margin-bottom: 4.78vw;
+                }
+                ul {
+                    li {
+                        img {
+                            max-width: 61.487vw;
+                        }
+                    }
+                }
+                .slick-dots {
+                bottom: -13.28vw;
+                gap: 0 3.98vw;
+                }
+                .slick-dots button {
+                width: 2.52vw;
+                height: 2.52vw;
+                }
+            }
+            }
+            .check {
+            &-container {
+                > img {
+                    max-width: 100vw;
+                }
+                .check-content {
+                    > img:first-child {
+                        max-width: 95.618vw;
+                        margin-top: -20.72vw;
+                        margin-left: 3.45vw;
+                    }
+                    .check-box {
+                        padding-top: 47.14vw;
+                        margin-bottom: 4.38vw;
+                        img:first-child {
+                            max-width: 79.947vw;
+                        }
+                        img:nth-of-type(2),
+                        img:nth-of-type(3),
+                        img:nth-of-type(4) {
+                            max-width: 79.947vw;
+                            margin-top: -1.59vw;
+                        }
+                    }
+                    .cta-btn {
+                        img {
+                            max-width: 95.485vw;
+                        }
+                    }
+                }
+            }
+            }
+            .token {
+                &-container {
+                    .token-head {
+                        padding-top: 9.56vw;
+                        padding-bottom: 35.59vw;
+                        text-align: center;
+                        position: relative;
+                        img {
+                            display: block;
+                        }
+                        img:first-child {
+                            max-width: 40.505vw;
+                            top: 9.56vw;
+                            left: calc(50% - 1.33vw);
+                        }
+                        img:nth-of-type(2) {
+                            max-width: 32.537vw;
+                            left: 6.91vw;
+                            bottom: 1.99vw;
+                        }
+                        img:last-child {
+                            max-width: 35.724vw;
+                            right: 6.24vw;
+                            bottom: 1.59vw;
+                        }
+                    }
+                    > img:nth-of-type(1) {
+                        max-width: 61.089vw;
+                        margin-right: 1.86vw;
+                        margin-bottom: 7.44vw;
+                    }
+                    > img:last-child {
+                        margin-top: -37.72vw;
+                        max-width: 100vw;
+                    }
+                    .token-simptoms {
+                    margin-bottom: 7.44vw;
+                    img {
+                        max-width: 100vw;
+                    }
+                    }
+                    .token-gr-text {
+                        margin-right: 5.31vw;
+                        img:first-child {
+                            max-width: 78.486vw;
+                            margin-right: 1.33vw;
+                            margin-bottom: 2.66vw;
+                        }
+                        img:last-child {
+                            max-width: 60.823vw;
+                        }
+                    }
+                }
+            }
+            .cause {
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    > img:first-child {
+                        max-width: 43.958vw;
+                        margin-top: -4.78vw;
+                        margin-left: 1.86vw;
+                    }
+                    > img:nth-of-type(2) {
+                        max-width: 65.87vw;
+                        margin-bottom: 4.38vw;
+                    }
+                    > img:nth-of-type(3) {
+                        max-width: 65.87vw;
+                        margin-bottom: 4.52vw;
+                    }
+                    > img:last-child {
+                        max-width: 87.384vw;
+                    }
+                    .caution-karada {
+                        margin-bottom: 32.67vw;
+                        img:first-child {
+                            max-width: 9.429vw;
+                            top: calc(28% + 1.2vw);
+                        }
+                        img:last-child {
+                            max-width: 22.444vw;
+                            margin-top: 6.11vw;
+                            margin-left: 26.56vw;
+                        }
+                    }
+                }
+            }
+            .card {
+                margin-top: -11.02vw;
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    padding-top: 6.64vw;
+                    > img {
+                        margin-bottom: 3.19vw;
+                        max-width: 66.268vw;
+                    }
+                    .card-item {
+                        img:first-child {
+                            max-width: 90.04vw;
+                            margin-left: 2.12vw;
+                        }
+                        img:nth-of-type(2) {
+                            max-width: 74.9vw;
+                        }
+                        p {
+                            bottom: 11.02vw;
+                            width: 74.9vw;
+                            font-size: 3.32vw;
+                            line-height: 5.44vw;
+                        }
+                    }
+                }
+            }
+            .ready {
+                margin-top: -34.53vw;
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    img:first-child {
+                        max-width: 27.623vw;
+                        margin-top: 5.05vw;
+                    }
+                    img:nth-of-type(2) {
+                        max-width: 100vw;
+                    }
+                    img:last-child {
+                        max-width: 84.595vw;
+                        margin-top: -5.71vw;
+                    }
+                }
+            }
+            .about {
+                margin-top: -12.48vw;
+                &-container {
+                    padding-bottom: 31.34vw;
+                    img:first-child {
+                        margin-bottom: 6.51vw;
+                        max-width: 80.345vw;
+                    }
+                    img:nth-of-type(2){
+                        max-width: 89.243vw;
+                    }
+                    img:nth-of-type(3) {
+                        margin-top: -2.92vw;
+                        margin-left: 6.37vw;
+                        margin-bottom: 7.04vw;
+                        max-width: 23.506vw;
+                    }
+                }
+            }
+            .flow {
+                margin-top: -15.14vw;
+                &-container {
+                    img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    padding-top: 6.24vw;
+                    padding-bottom: 9.96vw;
+                    ul {
+                    margin: 0 0 11.42vw 5.71vw;
+                    &::after {
+                        top: 10.23vw;
+                    }
+                    li {
+                        margin-bottom: 4.78vw;
+                        img {
+                            max-width: 89.11vw;
+                        }
+                    }
+                    }
+                    .cta-btn {
+                        img {
+                            max-width: 95.485vw;
+                            margin-left: 2.26vw;
+                        }
+                    }
+                }
+            }
+            .expert {
+                &-container {
+                    > img {
+                        max-width: 100vw;
+                    }
+                }
+                &-content {
+                    img:first-child {
+                        max-width: 80.345vw;
+                        padding-top: 7.97vw;
+                        margin-right: 8.5vw;
+                    }
+                    img:nth-of-type(2) {
+                        max-width: 157.371vw;
+                        margin-top: -4.78vw;
+                        margin-left: -1.73vw;
+                    }
+                    img:last-child {
+                        max-width: 92.032vw;
+                        margin-top: -0.53vw;
+                        margin-right: -1.33vw;
+                    }
+                }
+            }
+            .faq {
+                margin-top: -17vw;
+                padding-bottom: 31.08vw;
+                &-container {
+                    > img {
+                        padding-top: 2.26vw;
+                        max-width: 100vw;
+                    }
+                }
+                &-main {
+                    margin-top: 12.35vw;
+                    padding-left: 7.3vw;
+                    padding-right: 8.5vw;
+                    ul {
+                        li.faq-item {
+                            padding-top: 2.52vw;
+                            padding-bottom: 5.44vw;
+                            border-bottom: 0.13vw solid #000;
+                            .faq-title {
+                                gap: 0 2.39vw;
+                                img:first-child {
+                                    max-width: 4.382vw;
+                                }
+                            h3 {
+                                max-width: 66.67vw;
+                                font-size: 3.45vw;
+                                letter-spacing: 0.7vw;
+                            }
+                            .faq-plus {
+                                text-decoration: none;
+                                img {
+                                    max-width: 5.046vw;
+                                }
+                            }
+                            .faq-plus.faq-add img {
+                                transition: 0.6s;
+                            }
+                            .faq-plus.faq-remove img {
+                                transition: 0.6s;
+                            }
+                            }
+                            .faq-content {
+                            padding-top: 5.44vw;
+                            ul {
+                                li {
+                                padding: 1.33vw 0;
+                                gap: 0 1.86vw;
+                                img {
+                                    max-width: 4.781vw;
+                                }
+                                p {
+                                    text-align: left;
+                                    font-size: 2.92vw;
+                                    line-height: 5.58vw;
+                                    letter-spacing: 0.58vw;
+                                }
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer {
+                padding-bottom: 7.7vw;
+                &-container {
+                    img:first-child {
+                        margin-bottom: 9.56vw;
+                        max-width: 39.841vw;
+                    }
+                    img:nth-child(2) {
+                        margin-bottom: 9.3vw;
+                        max-width: 85.126vw;
+                    }
+                    .map {
+                    width: 85.13vw;
+                    height: 49.67vw;
+                    margin: 0 auto 5.84vw auto;
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    }
+                    img:nth-of-type(3) {
+                    margin-bottom: 12.88vw;
+                    max-width: 85.126vw;
+                    }
+                    img:last-child {
+                        max-width: 32.802vw;
+                    }
+                }
+            }
+      }  
+}
 
 
