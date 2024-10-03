@@ -33,6 +33,21 @@ body {
   animation: shine 1.5s infinite;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  transition: all 0.3s ease-in;
+}
+.overlay.active {
+  display: block;
+}
+
 #lp-tadasu {
   max-width: 753px;
   margin: 0 auto;
@@ -75,6 +90,9 @@ body {
 }
 #lp-tadasu .point {
   margin-top: -215px;
+}
+#lp-tadasu .point-container {
+  position: relative;
 }
 #lp-tadasu .point-top {
   position: relative;
@@ -196,6 +214,24 @@ body {
   position: absolute;
   right: -38px;
   bottom: 148px;
+}
+#lp-tadasu .point-modal {
+  display: none;
+  max-width: 642px;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+  z-index: 99;
+}
+#lp-tadasu .point-modal .modal-close {
+  position: absolute;
+  top: -32px;
+  right: 4px;
+}
+#lp-tadasu .point-modal.active {
+  display: block;
 }
 #lp-tadasu .improve {
   margin-top: -180px;

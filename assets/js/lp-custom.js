@@ -41,5 +41,34 @@ jQuery(function($){
         $faqplus.removeClass("faq-add");
         $faqplus.addClass("faq-remove");
         }
-    });   
+    }); 
+    
+    var modalShown = false;
+
+    $(window).on('scroll', function() {
+        var element = $('.point');
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementBottom = element.offset().top + element.outerHeight();
+        
+        if (scrollPosition >= elementBottom && !modalShown) {
+            $('.point-modal').addClass("active");
+            $('.overlay').addClass("active");
+            modalShown = true;
+        }
+    });
+
+    $(".modal-close").click(function(e) {
+        e.preventDefault();
+        $('.point-modal').removeClass("active");
+        $('.overlay').removeClass("active");
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.point-modal').length) {
+            $('.point-modal').removeClass("active");
+            $('.overlay').removeClass("active");
+        }
+    });
 });
+
+  

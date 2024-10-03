@@ -35,6 +35,21 @@ body {
     animation: shine 1.5s infinite;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    transition: all 0.3s ease-in;
+    &.active {
+        display: block;
+    }
+}
+
 #lp-tadasu {
     max-width: 753px;
     margin: 0 auto;
@@ -82,6 +97,9 @@ body {
 
     .point {
         margin-top: -215px;
+        &-container {
+            position: relative;
+        }
         &-top {
             position: relative;
             img:first-child {
@@ -203,6 +221,24 @@ body {
                         }
                     }
                 }
+            }
+        }
+        &-modal {
+            display: none;
+            max-width: 642px;
+            position: absolute;
+            top: 73%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in;
+            z-index: 99;
+            .modal-close {
+                position: absolute;
+                top: -32px;
+                right: 4px;
+            }
+            &.active {
+                display: block;
             }
         }
     }
