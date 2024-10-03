@@ -855,12 +855,15 @@ body {
     right: -5.05vw;
     bottom: 19.65vw;
   }
-  #lp-tadasu .point-modal {
+  #lp-tadasu .point-modal img {
     max-width: 85.259vw;
   }
   #lp-tadasu .point-modal .modal-close {
     top: -4.25vw;
     right: 0.531vw;
+  }
+  #lp-tadasu .point-modal .modal-close img {
+    max-width: 8.632vw;
   }
   #lp-tadasu .improve {
     margin-top: -23.9vw;

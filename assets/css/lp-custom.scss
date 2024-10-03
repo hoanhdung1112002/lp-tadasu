@@ -909,10 +909,15 @@ body {
                     }
                 }
                 &-modal {
-                    max-width: 85.259vw;
+                    img {
+                        max-width: 85.259vw;
+                    }
                     .modal-close {
                         top: -4.25vw;
                         right: 0.531vw;
+                        img {
+                            max-width: 8.632vw;
+                        }
                     }
                 }
             }
